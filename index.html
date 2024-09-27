@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-03</title>
+    <title>goit-markup-hw-05</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
@@ -331,13 +331,13 @@
             <li class="porfolio-list-item">
               <div class="portfolio-image">
                 <img
-                class="portfolio-list-image"
-                src="./images/portfolio/cashless-payment.jpg"
-                width="360"
-                height="300"
-                alt="Cashless Payment"
-              />
-                 <p class="portfolio-overlay">
+                  class="portfolio-list-image"
+                  src="./images/portfolio/cashless-payment.jpg"
+                  width="360"
+                  height="300"
+                  alt="Cashless Payment"
+                />
+                <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -351,13 +351,13 @@
             <li class="porfolio-list-item">
               <div class="portfolio-image">
                 <img
-                class="portfolio-list-image"
-                src="./images/portfolio/meditation-app.jpg"
-                width="360"
-                height="300"
-                alt="Meditation App"
-              />
-              <p class="portfolio-overlay">
+                  class="portfolio-list-image"
+                  src="./images/portfolio/meditation-app.jpg"
+                  width="360"
+                  height="300"
+                  alt="Meditation App"
+                />
+                <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -371,13 +371,13 @@
             <li class="porfolio-list-item">
               <div class="portfolio-image">
                 <img
-                class="portfolio-list-image"
-                src="./images/portfolio/taxi-service.jpg"
-                width="360"
-                height="300"
-                alt="Taxi Service"
-              />
-              <p class="portfolio-overlay">
+                  class="portfolio-list-image"
+                  src="./images/portfolio/taxi-service.jpg"
+                  width="360"
+                  height="300"
+                  alt="Taxi Service"
+                />
+                <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -391,13 +391,13 @@
             <li class="porfolio-list-item">
               <div class="portfolio-image">
                 <img
-                class="portfolio-list-image"
-                src="./images/portfolio/screen-illustrations.jpg"
-                width="360"
-                height="300"
-                alt="Screen Illustrations"
-              />
-              <p class="portfolio-overlay">
+                  class="portfolio-list-image"
+                  src="./images/portfolio/screen-illustrations.jpg"
+                  width="360"
+                  height="300"
+                  alt="Screen Illustrations"
+                />
+                <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -410,14 +410,14 @@
             </li>
             <li class="porfolio-list-item">
               <div class="portfolio-image">
-                 <img
-                class="portfolio-list-image"
-                src="./images/portfolio/online-courses.jpg"
-                width="360"
-                height="300"
-                alt="Online Courses"
-              />
-              <p class="portfolio-overlay">
+                <img
+                  class="portfolio-list-image"
+                  src="./images/portfolio/online-courses.jpg"
+                  width="360"
+                  height="300"
+                  alt="Online Courses"
+                />
+                <p class="portfolio-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
@@ -478,8 +478,120 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label class="footer-form-label" for="user-email">
+            Subscribe
+          </label>
+          <input
+            class="footer-form-input"
+            id="user-email"
+            type="email"
+            placeholder="E-mail"
+            required
+            name="footer-user-email"
+            type="email"
+          />
+          <button class="footer-form-button" type="submit">Subscribe</button>
+        </form>
       </div>
     </footer>
     <!-- CLOSE FOOTER -->
+    <!-- MODAL WINDOWS -->
+     <div class="modal-backdrop"></div>
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="order-form">
+          <div class="order-form-field-wrapper">
+            <label class="order-form-field-label" for="user-name">Name</label>
+            <div class="order-form-input-wrapper">
+              <input
+                class="order-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+              />
+              <svg class="order-form-input-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-field-wrapper">
+            <label class="order-form-field-label" for="user-email">
+              Email
+            </label>
+            <div class="order-form-input-wrapper">
+              <input
+                class="order-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+              />
+              <svg class="order-form-input-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-field-wrapper">
+            <label class="order-form-field-label" for="user-phone">
+              Phone number
+            </label>
+            <div class="order-form-input-wrapper">
+              <input
+                class="order-form-input"
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+              />
+              <svg class="order-form-input-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="order-form-field-wrapper">
+            <label class="order-form-field-label" for="user-comment">
+              Comment
+            </label>
+            <textarea
+              class="order-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+              required
+            ></textarea>
+          </div>
+          <div class="order-form-checkbox-wrapper">
+            <input
+              class="order-form-checkbox visually-hidden"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label class="order-form-checkbox-label" for="privacy-policy">
+              <span class="order-form-custom-checkbox">
+                <svg class="order-form-checkbox-icon" width="10" height="10">
+                  <use href="./images/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="order-form-policy-link" href="">
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+          <button class="order-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- /MODAL WINDOWS -->
   </body>
 </html>
