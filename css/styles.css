@@ -639,7 +639,7 @@ img {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -768,7 +768,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
