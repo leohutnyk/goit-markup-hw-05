@@ -337,7 +337,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-link:hover, .social-list-link:focus {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: #404bbf;
 }
 
@@ -366,7 +367,8 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.porfolio-list-item:hover, .porfolio-list-item:focus {
+.porfolio-list-item:hover,
+.porfolio-list-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -493,7 +495,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-media-link:hover, .footer-media-link:focus {
+.footer-media-link:hover,
+.footer-media-link:focus {
   background-color: #31d0aa;
 }
 
@@ -501,14 +504,47 @@ img {
   fill: #f4f4fd;
 }
 
-.footer-form-label {
-  display: block;
+.footer-subscribe-form {
+  margin-left: 80px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.footer-form-button {
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  padding-left: 24px;
+  min-width: 165px;
+  height: 40px;
+}
+
+.subscribe-icon {
+  fill: #ffffff;
 }
 
 /* ============= /FOOTER STYLES ============= */
 
 /* ============= MODAL WINDOWS STYLES ============= */
-  .modal-backdrop {
+.modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -521,35 +557,44 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
 
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-backdrop.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 408px;
-  height: 80%;
-  max-height: 584px;
-  overflow: auto;
+  min-height: 584px;
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
-  background-color: #fcfcfc;
+  background: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  background-color: transparent;
-  border: none;
+  width: 24px;
+  height: 24px;
+  border: rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  fill: #111111;
+  stroke-width: 1px;
   padding: 0;
   line-height: 0;
-  stroke: #111111;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -574,9 +619,11 @@ img {
 
 .order-form-field-label {
   display: block;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
   margin-bottom: 8px;
 }
 
@@ -586,14 +633,14 @@ img {
 
 .order-form-input {
   width: 100%;
-  height: 58px;
+  height: 40px;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: #111111;
-  border: 1px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
   background-color: transparent;
-  padding-left: 62px;
+  padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -607,13 +654,12 @@ img {
   top: 50%;
   left: 24px;
   transform: translateY(-50%);
-  stroke: #404040;
-  fill: none;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form-input:focus + .order-form-input-icon {
-  stroke: #4d5ae5;
+  fill: #4d5ae5;
 }
 
 .order-form-comment {
@@ -682,10 +728,13 @@ img {
 }
 
 .order-form-submit-btn {
+  display: block;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
-padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
   font-weight: 600;
   font-size: 14px;
   background-color: #4d5ae5;
@@ -695,7 +744,8 @@ padding: 16px 32px;
 
 .order-form-submit-btn:hover,
 .order-form-submit-btn:focus {
-  color: #4d5ae5;
-  background-color: #fcf1e0;
+  color: #ffffff;
+  background-color: #404bbf;
+  cursor: pointer;
 }
 /* ============= /MODAL WINDOWS STYLES ============= */

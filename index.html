@@ -478,10 +478,9 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <label class="footer-form-label" for="user-email">
-            Subscribe
-          </label>
+        <div class="footer-subscribe-form">
+          <form class="footer-form"></form>
+          <p class="page-footer-social-text">Subscribe</p>
           <input
             class="footer-form-input"
             id="user-email"
@@ -492,12 +491,16 @@
             type="email"
           />
           <button class="footer-form-button" type="submit">Subscribe</button>
+            <svg class="subscribe-icon" width="24" height="24"></svg>
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
         </form>
+        </div>
       </div>
     </footer>
     <!-- CLOSE FOOTER -->
     <!-- MODAL WINDOWS -->
-     <div class="modal-backdrop"></div>
+     <div class="modal-backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -519,7 +522,7 @@
                 required
               />
               <svg class="order-form-input-icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-user"></use>
+                <use href="./images/sprite.svg#icon-person"></use>
               </svg>
             </div>
           </div>
@@ -579,7 +582,7 @@
             <label class="order-form-checkbox-label" for="privacy-policy">
               <span class="order-form-custom-checkbox">
                 <svg class="order-form-checkbox-icon" width="10" height="10">
-                  <use href="./images/sprite.svg#icon-checkmark"></use>
+                  <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
